@@ -627,6 +627,26 @@ hr {
     width: 58px;
     height: 58px;
     line-height: 67.5px; }
+  .tile.tile-4 .tile-inner {
+    background-position: -58px 0; }
+  .tile.tile-8 .tile-inner {
+    background-position: -116px 0; }
+  .tile.tile-16 .tile-inner {
+    background-position: -174px 0; }
+  .tile.tile-32 .tile-inner {
+    background-position: -232px 0; }
+  .tile.tile-64 .tile-inner {
+    background-position: -290px 0; }
+  .tile.tile-128 .tile-inner {
+    background-position: -348px 0; }
+  .tile.tile-256 .tile-inner {
+    background-position: -406px 0; }
+  .tile.tile-512 .tile-inner {
+    background-position: -464px 0; }
+  .tile.tile-1024 .tile-inner {
+    background-position: -522px 0; }
+  .tile.tile-2048 .tile-inner {
+    background-position: -580px 0; }
   .tile.tile-position-1-1 {
     -webkit-transform: translate(0px, 0px);
     -moz-transform: translate(0px, 0px);
