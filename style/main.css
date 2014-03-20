@@ -93,10 +93,10 @@ h1.title {
     animation-fill-mode: both; }
 
 .score-container:after {
-  content: "Score"; }
+  content: "Puntos"; }
 
 .best-container:after {
-  content: "Best"; }
+  content: "Mejor"; }
 
 p {
   margin-top: 0;

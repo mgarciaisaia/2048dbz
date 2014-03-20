@@ -1,2 +1,2 @@
-## Contributing
-Changes and improvements are more than welcome! Feel free to fork and open a pull request. Please make your changes in a specifically made branch and request to pull on `master`! If you can, please make sure the game fully works before sending the PR, as that will help speed up the process.
+## Contribuir
+¡Se agradecen cambios y mejoras! Sentite libre de forkear y mandar Pull Requests. Asegurate de hacer los cambios en un topic branch, para mergearlo más fácilmente. Si podés verificar que no rompiste nada y que tu código funciona, mejor aún :)

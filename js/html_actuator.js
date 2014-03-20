@@ -131,7 +131,7 @@ HTMLActuator.prototype.updateBestScore = function (bestScore) {
 
 HTMLActuator.prototype.message = function (won) {
   var type    = won ? "game-won" : "game-over";
-  var message = won ? "You win!" : "Game over!";
+  var message = won ? "¡Ganaste!" : "¡Perdiste!";
 
   if (typeof ga !== "undefined") {
     ga("send", "event", "game", "end", type, this.score);
@@ -159,8 +159,8 @@ HTMLActuator.prototype.scoreTweetButton = function () {
   tweet.setAttribute("data-counturl", "http://mgarciaisaia.github.io/2048dbz/");
   tweet.textContent = "Tweet";
 
-  var text = "I scored " + this.score + " points at 2048DBZ, a game where you " +
-             "join Gokus to level'em up! #2048game";
+  var text = "Hice " + this.score + " puntos en 2048DBZ, un juego en que " +
+             "unís Gokus para levelearlos! #2048dbz #2048game #dbz";
   tweet.setAttribute("data-text", text);
 
   return tweet;
