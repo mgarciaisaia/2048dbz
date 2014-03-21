@@ -24,6 +24,7 @@ HTMLActuator.prototype.actuate = function (grid, metadata) {
 
     self.updateScore(metadata.score);
     self.updateBestScore(metadata.bestScore);
+    self.updateMaxTileValue(metadata.maxTileValue);
 
     if (metadata.terminated) {
       if (metadata.over) {
@@ -125,6 +126,10 @@ HTMLActuator.prototype.updateScore = function (score) {
   }
 };
 
+HTMLActuator.prototype.updateMaxTileValue = function(maxTileValue) {
+  this.maxTileValue = maxTileValue;
+};
+
 HTMLActuator.prototype.updateBestScore = function (bestScore) {
   this.bestContainer.textContent = bestScore;
 };
@@ -159,8 +164,22 @@ HTMLActuator.prototype.scoreTweetButton = function () {
   tweet.setAttribute("data-counturl", "http://mgarciaisaia.github.io/2048dbz/");
   tweet.textContent = "Tweet";
 
-  var text = "Hice " + this.score + " puntos en 2048DBZ, un juego en que " +
-             "unís Gokus para levelearlos! #2048dbz #2048game #dbz";
+  var textosSegunFase = {
+    2: '¡Hola, soy Gokú!',
+    4: '¡Hola, soy Gokú! ¡Y me convertí en un mono gigante!',
+    8: '¡Terminé de entrenar con Kamisama y derrotaré a Piccoro!',
+    16: '¡Ya verás Vegeta! ¡Kaioken!'
+    32: '¡Yo soy el supersaiyajín Gokú! Por todos los guerreros saiyajin que asesinaste, y también por todos los namekuseijin que mataste, juro que ¡¡TE EXTERMINARE!!',
+    64: 'Éste es el que supera al supersaiyajín ordinario, admito que es muy poderoso.',
+    128: '¡Prepárate Majin Boo! ¡Soy un supersaiyajín fase 3!',
+    256: '¿Qué pasó? ¡Soy un niño otra vez!',
+    512: '¡Este cuerpo no puede soportar tanto poder!, soy un supersaiyajín fase 3.',
+    1024: '¡Soy Gokú y me convertí en un Ōzaru dorado!',
+    2048: '¡Gané! ¡Logré convertirme en supersaiyajín fase 4!'
+  };
+
+  var text = textosSegunFase[this.maxTileValue] + " (¡Hice " + this.score + " puntos en 2048DBZ, un juego en que " +
+             "unís Gokús para levelearlos!) #2048dbz #2048game #dbz";
   tweet.setAttribute("data-text", text);
 
   return tweet;

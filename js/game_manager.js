@@ -26,11 +26,7 @@ GameManager.prototype.keepPlaying = function () {
 };
 
 GameManager.prototype.isGameTerminated = function () {
-  if (this.over || (this.won && !this.keepPlaying)) {
-    return true;
-  } else {
-    return false;
-  }
+  return this.over || (this.won && !this.keepPlaying);
 };
 
 // Set up the game
@@ -38,6 +34,7 @@ GameManager.prototype.setup = function () {
   this.grid        = new Grid(this.size);
 
   this.score       = 0;
+  this.maxTileValue = 0;
   this.over        = false;
   this.won         = false;
   this.keepPlaying = false;
@@ -74,6 +71,7 @@ GameManager.prototype.actuate = function () {
 
   this.actuator.actuate(this.grid, {
     score:      this.score,
+    maxTileValue: this.maxTileValue,
     over:       this.over,
     won:        this.won,
     bestScore:  this.scoreManager.get(),
@@ -138,6 +136,7 @@ GameManager.prototype.move = function (direction) {
 
           // Update the score
           self.score += merged.value;
+          self.maxTileValue = merged.value;
 
           // The mighty 2048 tile
           if (merged.value === 2048) self.won = true;
