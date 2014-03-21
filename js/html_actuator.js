@@ -168,7 +168,7 @@ HTMLActuator.prototype.scoreTweetButton = function () {
     2: '¡Hola, soy Gokú!',
     4: '¡Hola, soy Gokú! ¡Y me convertí en un mono gigante!',
     8: '¡Terminé de entrenar con Kamisama y derrotaré a Piccoro!',
-    16: '¡Ya verás Vegeta! ¡Kaioken!'
+    16: '¡Ya verás Vegeta! ¡Kaioken!',
     32: '¡Yo soy el supersaiyajín Gokú! Por todos los guerreros saiyajin que asesinaste, y también por todos los namekuseijin que mataste, juro que ¡¡TE EXTERMINARE!!',
     64: 'Éste es el que supera al supersaiyajín ordinario, admito que es muy poderoso.',
     128: '¡Prepárate Majin Boo! ¡Soy un supersaiyajín fase 3!',
