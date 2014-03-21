@@ -19,6 +19,7 @@
   <meta property="og:image" content="http://mgarciaisaia.github.io/2048dbz/meta/og_image.png"/>
 </head>
 <body>
+  <div id="fb-root"></div>
   <div class="container">
     <div class="heading">
       <h1 class="title">2048DBZ</h1>
@@ -33,7 +34,7 @@
       <div class="game-message">
         <p></p>
         <div class="lower">
-	        <a class="keep-playing-button">Seguir jugando</a>
+          <a class="keep-playing-button">Seguir jugando</a>
           <a class="retry-button">Reintentar</a>
           <div class="score-sharing"></div>
         </div>
@@ -79,11 +80,19 @@
     Modificado por <a href="http://github.com/dggluz" target="_blank">Gonzalo Gluzman</a>, con el trabajo de mono hecho por <a href="http://github.com/mgarciaisaia">Matias Garcia Isaia</a>. Basado en <a href="https://git.io/2048" target="_blank">2048, de Gabriele Cirulli</a>, por idea de Mariano Salerno, Pablo de Haro, Claudio Fernandez, Manu Gambino, y nosotros mismos.
     </p>
     <div class="sharing">
+      <div class="fb-like" data-href="https://developers.facebook.com/docs/plugins/" data-width="http://mgarciaisaia.github.io/2048dbz/" data-layout="button_count" data-action="like" data-show-faces="false" data-share="true"></div>
+
       <a href="https://twitter.com/share" class="twitter-share-button" data-text="Mirá 2048DBZ, un juego en que unís Goku's para subirlos de nivel! #2048dbz #dbz #2048game" data-url="http://mgarciaisaia.github.io/2048dbz/" data-counturl="http://mgarciaisaia.github.io/2048dbz/">Tweet</a>
       <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
-
     </div>
   </div>
+  <script>(function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = "//connect.facebook.net/es_ES/all.js#xfbml=1";
+    fjs.parentNode.insertBefore(js, fjs);
+  }(document, 'script', 'facebook-jssdk'));</script>
 
   <script src="js/classlist_polyfill.js"></script>
   <script src="js/animframe_polyfill.js"></script>
