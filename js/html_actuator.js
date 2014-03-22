@@ -182,7 +182,7 @@ HTMLActuator.prototype.scoreTweetButton = function () {
              "unís Gokús para levelearlos!) #2048dbz #2048game #dbz";
   tweet.setAttribute("data-text", text);
 
-  document.getElementById('fb-share').href = 'http://www.facebook.com/sharer.php?s=100&p[title]=2048DBZ&p[url]=http%3A%2F%2Fgit.io%2F2048dbz%2F&p[images][0]=http%3A%2F%2Fmgarciaisaia.github.io%2F2048dbz%2Ffavicon.ico' + '&p[summary]=' + encodeURIComponent(text);
+//  document.getElementById('fb-share').href = 'http://www.facebook.com/sharer.php?s=100&p[title]=2048DBZ&p[url]=http%3A%2F%2Fgit.io%2F2048dbz%2F&p[images][0]=http%3A%2F%2Fmgarciaisaia.github.io%2F2048dbz%2Ffavicon.ico' + '&p[summary]=' + encodeURIComponent(text);
 
   return tweet;
 };
