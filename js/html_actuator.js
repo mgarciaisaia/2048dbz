@@ -160,8 +160,8 @@ HTMLActuator.prototype.scoreTweetButton = function () {
   var tweet = document.createElement("a");
   tweet.classList.add("twitter-share-button");
   tweet.setAttribute("href", "https://twitter.com/share");
-  tweet.setAttribute("data-url", "http://mgarciaisaia.github.io/2048dbz/");
-  tweet.setAttribute("data-counturl", "http://mgarciaisaia.github.io/2048dbz/");
+  tweet.setAttribute("data-url", "http://git.io/2048dbz");
+  tweet.setAttribute("data-counturl", "http://git.io/2048dbz");
   tweet.textContent = "Tweet";
 
   var textosSegunFase = {
@@ -181,8 +181,6 @@ HTMLActuator.prototype.scoreTweetButton = function () {
   var text = textosSegunFase[this.maxTileValue] + " (¡Hice " + this.score + " puntos en 2048DBZ, un juego en que " +
              "unís Gokús para levelearlos!) #2048dbz #2048game #dbz";
   tweet.setAttribute("data-text", text);
-
-//  document.getElementById('fb-share').href = 'http://www.facebook.com/sharer.php?s=100&p[title]=2048DBZ&p[url]=http%3A%2F%2Fgit.io%2F2048dbz%2F&p[images][0]=http%3A%2F%2Fmgarciaisaia.github.io%2F2048dbz%2Ffavicon.ico' + '&p[summary]=' + encodeURIComponent(text);
 
   return tweet;
 };

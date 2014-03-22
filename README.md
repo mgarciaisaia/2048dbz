@@ -1,7 +1,7 @@
 # 2048DBZ
 Una versión DBZ de [2048](http://git.io/2048), basado en una idea de Mariano Salerno, Pablo de Haro, Claudio Fernandez, Manu Gambino, y nosotros mismos.
 
-Hecho _porque podemos_ :) [¡Jugalo acá!](http://mgarciaisaia.github.io/2048dbz/)
+Hecho _porque podemos_ :) [¡Jugalo acá!](http://git.io/2048dbz)
 
 ## Licencia
 2048DBZ está licenciado bajo la [licencia MIT](https://github.com/mgarciaisaia/2048dbz/blob/master/LICENSE.txt).
