@@ -10,6 +10,62 @@ html, body {
 body {
   margin: 80px 0; }
 
+/********************** SCOUTER *************************/
+@media screen and (min-width: 521px) {
+  .header {
+    background: rgba(0, 0, 0, 0.7);
+    padding: 10px;
+    border-radius: 7px;
+    color: rgba(255, 184, 0, 0.91);
+  }
+  .container {
+    z-index: 100;
+    position: relative;
+  }
+  #vegeta-scouter {
+    position: absolute;
+    top: -450px;
+    left: -55px;
+    z-index: -2;
+  }
+  #vegeta-scouter>img {
+    position: absolute;
+    top: 0px;
+    width: 725px;
+  }
+  #scouter-score {
+    font-size: 1.4em;
+    font-weight: bold;
+    color: yellow;
+    font-family: sans-serif;
+    position: absolute;
+    left: 378px;
+    top: 112px;
+    opacity: 0.7;
+    text-shadow: 0px 0px 2px goldenrod;
+    -webkit-transform: skew(-9deg, -3deg);
+    -ms-transform: skew(-9deg, -3deg);
+    -moz-transform: skew(-9deg, -3deg);
+    transform: skew(-9deg, -3deg);
+    text-align: right;
+    display: inline-block;
+    width: 50px;
+  }
+  body {
+    margin-top: 273px;
+  }
+  .score-container {
+    display: none!important;
+  }
+}
+@media screen and (max-width: 520px) {
+  #vegeta-scouter {
+    display: none;
+  }
+}
+/********************* /SCOUTER *************************/
+
+
 .heading:after {
   content: "";
   display: block;
