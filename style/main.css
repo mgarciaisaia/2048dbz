@@ -34,13 +34,13 @@ body {
     width: 725px;
   }
   #scouter-score {
-    font-size: 1.4em;
+    font-size: 1.2em;
     font-weight: bold;
     color: yellow;
     font-family: sans-serif;
     position: absolute;
     left: 378px;
-    top: 112px;
+    top: 115px;
     opacity: 0.7;
     text-shadow: 0px 0px 2px goldenrod;
     -webkit-transform: skew(-9deg, -3deg);
