@@ -944,3 +944,7 @@ hr {
         .btc-donate .address:after {
           left: 50%;
           bottom: 2px; } }
+
+#twitter-widget-0 {
+  width: 15px;
+}
