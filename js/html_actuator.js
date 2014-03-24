@@ -143,6 +143,9 @@ HTMLActuator.prototype.message = function (won) {
     ga("send", "event", "game", "end", type, this.score);
   }
 
+  if(!won) {
+    this.tileContainer.classList.add("game-over");
+  }
   this.messageContainer.classList.add(type);
   this.messageContainer.getElementsByTagName("p")[0].textContent = message;
 
@@ -155,6 +158,7 @@ HTMLActuator.prototype.clearMessage = function () {
   // IE only takes one value to remove at a time.
   this.messageContainer.classList.remove("game-won");
   this.messageContainer.classList.remove("game-over");
+  this.tileContainer.classList.remove("game-over");
 };
 
 HTMLActuator.prototype.scoreTweetButton = function () {
