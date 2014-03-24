@@ -51,11 +51,80 @@ body {
     display: inline-block;
     width: 50px;
   }
+  #scouter-deco {
+    position: absolute;
+    left: 410px;
+    top: 92px;
+    font-weight: bolder; color: yellow;    
+    opacity: 0.7;
+    text-shadow: 0px 0px 2px goldenrod;
+  }
+  #scouter-deco-arrow-left {
+    font-size: 0.45em;
+    position: absolute;
+    left: -6px;
+    top: 10px;
+    -webkit-transform: skew(0deg,-5deg);
+    -ms-transform: skew(0deg,-5deg);
+    -moz-transform: skew(0deg,-5deg);
+    transform: skew(0deg,-5deg);
+  }
+  #scouter-deco-arrow-right {
+    font-size: 0.45em;
+    position: absolute;
+    top: 9px;
+    left: 15px;
+    -webkit-transform: skew(10deg, -20deg);
+    -ms-transform: skew(10deg, -20deg);
+    -moz-transform: skew(10deg, -20deg);
+    transform: skew(10deg, -20deg);
+  }
+  #scouter-deco-arrow-down {
+    position: absolute;
+    top: 20px;
+    font-size: 0.55em;
+    left: 2px;
+    -webkit-transform: skew(-5deg, 2deg);
+    -ms-transform: skew(-5deg, 2deg);
+    -moz-transform: skew(-5deg, 2deg);
+    transform: skew(-5deg, 2deg);
+  }
+  #scouter-deco-circle {
+    font-size: 1.5em;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    -webkit-transform: skew(12deg, -5deg);
+    -moz-transform: skew(12deg, -5deg);
+    -ms-transform: skew(12deg, -5deg);
+    transform: skew(12deg, -5deg);
+  }
   body {
     margin-top: 273px;
   }
   .score-container {
     display: none!important;
+  }
+
+  .blink {
+    -webkit-animation: blink 0.6s steps(2, start) infinite;
+    -moz-animation: blink 0.6s steps(2, start) infinite;
+    animation: blink 0.6s steps(2, start) infinite;
+  }
+  @-webkit-keyframes blink {
+    to {
+      visibility: hidden;
+    }
+  }
+  @-moz-keyframes blink {
+    to {
+      visibility: hidden;
+    }
+  }
+  @keyframes blink {
+    to {
+      visibility: hidden;
+    }
   }
 }
 @media screen and (max-width: 520px) {
