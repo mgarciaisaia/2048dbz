@@ -2,21 +2,17 @@
 html, body {
   margin: 0;
   padding: 0;
-  background: #faf8ef;
-  color: #776e65;
+  background: #000000;
+  color: #fff;
   font-family: "Clear Sans", "Helvetica Neue", Arial, sans-serif;
   font-size: 18px; }
-
-body {
-  margin: 80px 0; }
 
 /********************** SCOUTER *************************/
 @media screen and (min-width: 521px) {
   .header {
-    background: rgba(0, 0, 0, 0.7);
     padding: 10px;
     border-radius: 7px;
-    color: rgba(255, 184, 0, 0.91);
+    color: rgba(255, 255, 255, 0.9);
   }
   .container {
     z-index: 100;
@@ -24,8 +20,8 @@ body {
   }
   #vegeta-scouter {
     position: absolute;
-    top: -450px;
-    left: -55px;
+    top: -195px;
+    left: -89px;
     z-index: -2;
   }
   #vegeta-scouter>img {
@@ -55,7 +51,7 @@ body {
     position: absolute;
     left: 410px;
     top: 92px;
-    font-weight: bolder; color: yellow;    
+    font-weight: bolder; color: yellow;
     opacity: 0.7;
     text-shadow: 0px 0px 2px goldenrod;
   }
@@ -99,9 +95,7 @@ body {
     -ms-transform: skew(12deg, -5deg);
     transform: skew(12deg, -5deg);
   }
-  body {
-    margin-top: 273px;
-  }
+
   .score-container {
     display: none!important;
   }
@@ -181,7 +175,7 @@ h1.title {
 .score-container, .best-container {
   position: relative;
   display: inline-block;
-  background: #bbada0;
+  background: rgba(0,0,0,0.5);
   padding: 15px 25px;
   font-size: 25px;
   height: 25px;
@@ -229,7 +223,7 @@ p {
   line-height: 1.65; }
 
 a {
-  color: #776e65;
+  color: #fff;
   font-weight: bold;
   text-decoration: underline;
   cursor: pointer; }
@@ -269,14 +263,13 @@ hr {
     opacity: 1; } }
 
 .game-container {
-  margin-top: 40px;
   position: relative;
   padding: 15px;
   cursor: default;
   -webkit-touch-callout: none;
   -webkit-user-select: none;
   -moz-user-select: none;
-  background: #bbada0;
+  background: rgba(0,0,0,0.7);
   border-radius: 6px;
   width: 500px;
   height: 500px;
@@ -311,7 +304,7 @@ hr {
       margin-top: 59px; }
     .game-container .game-message a {
       display: inline-block;
-      background: #8f7a66;
+      background: rgba(0, 0, 0, 0.75);
       border-radius: 3px;
       padding: 0 20px;
       text-decoration: none;
@@ -627,6 +620,9 @@ hr {
   animation-fill-mode: backwards; }
 
 .game-intro {
+  width: 190px;
+  background: rgba(0, 0, 0, 0.5);
+  text-align: center;
   margin-bottom: 0; }
 
 .game-explanation {
