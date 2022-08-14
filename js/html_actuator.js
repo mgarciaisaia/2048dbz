@@ -165,8 +165,8 @@ HTMLActuator.prototype.scoreTweetButton = function () {
   var tweet = document.createElement("a");
   tweet.classList.add("twitter-share-button");
   tweet.setAttribute("href", "https://twitter.com/share");
-  tweet.setAttribute("data-url", "http://git.io/2048dbz");
-  tweet.setAttribute("data-counturl", "http://git.io/2048dbz");
+  tweet.setAttribute("data-url", "https://mgarciaisaia.github.io/2048dbz/");
+  tweet.setAttribute("data-counturl", "https://mgarciaisaia.github.io/2048dbz/");
   tweet.textContent = "Tweet";
 
   var textosSegunFase = {
