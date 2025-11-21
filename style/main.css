@@ -791,6 +791,10 @@ hr {
     background-position: -522px 0; }
   .tile.tile-2048 .tile-inner {
     background-position: -580px 0; }
+  .tile.tile-4096 .tile-inner {
+    background-position: -696px 0; }
+  .tile.tile-8192 .tile-inner {
+    background-position: -638px 0; }
   .tile.tile-position-1-1 {
     -webkit-transform: translate(0px, 0px);
     -moz-transform: translate(0px, 0px);
